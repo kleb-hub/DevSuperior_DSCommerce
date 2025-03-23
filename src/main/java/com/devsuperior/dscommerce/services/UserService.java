@@ -41,7 +41,6 @@ public class UserService implements UserDetailsService {
     }
 
     protected User authenticated() {
-
         try {
             Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
             Jwt jwtPrincipal = (Jwt) authentication.getPrincipal();
